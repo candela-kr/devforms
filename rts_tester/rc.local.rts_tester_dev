@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#su - ubuntu -c "/home/ubuntu/bin/start_rtserver.sh"
+
+su - ubuntu -c "/home/ubuntu/bin/update-public-dns.sh rts_tester"
+su - ubuntu -c "/home/ubuntu/bin/update-local-dns.sh rts_tester"
+
+exit 0

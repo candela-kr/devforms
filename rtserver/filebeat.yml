@@ -1,0 +1,15 @@
+filebeat.prospectors:
+- type: log
+  enabled: true
+  paths:
+    - /home/ubuntu/.pm2/logs/*.log
+  include_lines: ['^[[:digit:]]' ]
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+setup.template.settings:
+  index.number_of_shards: 3
+name: "rtserver"
+tags: ["dev-rtserver", "rts-tier"]
+output.logstash:
+  hosts: ["log-dev.hellobit.io:5044"]

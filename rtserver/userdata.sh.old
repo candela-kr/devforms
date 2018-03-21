@@ -1,0 +1,22 @@
+#!/bin/sh
+
+SCC=1
+DOMAIN_NAME="candela.kr"
+ENV_FILE="/home/ubuntu/.candela/config"
+
+## for old images not provisined
+if [ ! -e /home/ubuntu/.candela ]; then
+        mkdir /home/ubuntu/.candela
+fi
+
+if [ -n $SCC ]; then
+	echo "export SCC_STATE_SERVER_HOST="rtstate.$DOMAIN_NAME" >> $ENV_FILE
+fi
+
+cat > /etc/rc.local << EOF
+#!/bin/sh
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh rtserver"
+exit 0
+EOF
+chmod +x /etc/rc.local
+

@@ -1,0 +1,14 @@
+server {
+	listen 8080;
+	#listen [::]:80;
+
+       server_name wls.candela.kr;
+
+       root /var/www/html;
+
+       index index.html;
+
+       location / {
+               try_files $uri $uri/ =404;
+       }
+}

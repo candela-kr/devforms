@@ -1,0 +1,87 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            c4:a8:86:6a:b0:b2:9b:bb:5f:6d:66:c4:13:6e:08:7c
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=Candela CA
+        Validity
+            Not Before: Feb 22 14:06:27 2018 GMT
+            Not After : Feb 20 14:06:27 2028 GMT
+        Subject: CN=wlserver
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a4:ee:7c:f9:ba:66:2e:13:90:8d:7c:42:d0:90:
+                    13:ff:70:3b:cc:97:02:69:2e:c8:e2:7c:91:f2:bb:
+                    25:3e:20:e0:51:23:b5:77:a4:64:e3:9a:40:41:8d:
+                    0b:3d:73:bc:bd:eb:9f:0e:67:f4:66:03:23:91:b5:
+                    c4:73:0b:d7:7a:3c:e2:b6:50:64:06:a7:0f:97:d9:
+                    a9:60:8a:90:34:43:b1:50:65:92:ef:69:0a:20:1b:
+                    60:fb:c1:81:e1:4a:0e:9d:fa:4c:41:39:65:b0:86:
+                    e4:67:74:90:59:4e:40:b4:17:9e:09:88:54:1f:ba:
+                    74:02:05:67:a3:e5:90:ec:7e:d7:fa:19:a3:fd:b3:
+                    8c:ef:f8:cc:46:7d:62:3a:de:d0:c3:be:91:6c:d1:
+                    9e:52:51:46:60:bc:52:31:fb:3b:35:72:e3:52:61:
+                    2a:a0:26:f9:55:ef:ef:15:cf:d0:08:08:aa:06:cb:
+                    a5:93:71:96:89:fa:04:6e:f6:5b:13:bb:5c:2b:91:
+                    df:b4:dd:cc:9a:1a:c4:55:31:cb:45:1b:32:60:cb:
+                    dc:f6:54:68:4a:f4:39:a2:be:f0:04:71:66:f5:69:
+                    eb:2a:fa:a2:33:01:37:96:26:d1:32:ce:b7:06:80:
+                    66:cf:17:42:64:9b:7a:25:c2:42:8b:8b:cb:5d:48:
+                    7a:93
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                2D:33:EE:CB:55:8D:4D:D1:08:9B:52:E1:7C:08:88:70:6A:AC:97:16
+            X509v3 Authority Key Identifier: 
+                keyid:2B:CC:EB:8F:F6:11:FB:90:94:1A:42:B9:D4:B4:0A:50:86:F0:1D:99
+                DirName:/CN=Candela CA
+                serial:B3:AC:83:43:FB:70:78:98
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:wlserver
+    Signature Algorithm: sha256WithRSAEncryption
+         aa:d1:4b:d7:48:eb:46:9e:0f:21:61:89:96:a7:45:93:7d:61:
+         58:6f:32:1d:79:6f:4b:80:68:0e:fa:ff:35:04:fe:7c:13:31:
+         81:29:66:77:ee:14:66:60:41:94:b9:5f:fa:7c:12:df:88:c7:
+         2d:c7:db:2b:57:ee:be:e4:2d:6f:32:e1:1b:96:d3:5f:be:84:
+         23:d1:f8:5a:93:c3:90:c3:18:eb:60:43:9f:fd:ca:be:5a:4e:
+         21:0c:d9:37:36:7b:38:ba:16:61:1c:b6:d0:a1:85:6c:b0:90:
+         3c:1e:7b:a5:ac:90:3e:93:a2:e7:3d:b4:52:45:85:3c:4e:d8:
+         ce:a1:a4:49:3f:0e:ed:aa:b1:36:23:ca:30:21:1c:71:d0:31:
+         87:15:f5:49:04:27:4a:cd:9c:50:9f:b1:77:04:e3:87:b1:34:
+         ea:20:12:e1:43:65:a2:19:60:a7:65:b8:0f:b7:0f:6e:02:28:
+         52:88:74:29:f9:d4:a4:bd:bb:ed:e8:07:b5:3e:9f:62:4d:c2:
+         35:4a:6e:f9:de:d3:a6:88:fd:a2:de:11:7e:6d:b9:28:9e:35:
+         eb:81:be:b3:0b:8d:8c:77:de:93:e1:c7:10:1c:08:10:4c:25:
+         32:67:de:78:94:cf:32:31:d0:5c:8d:7e:2b:5c:fa:e4:08:69:
+         96:22:1c:e2
+-----BEGIN CERTIFICATE-----
+MIIDXzCCAkegAwIBAgIRAMSohmqwspu7X21mxBNuCHwwDQYJKoZIhvcNAQELBQAw
+FTETMBEGA1UEAwwKQ2FuZGVsYSBDQTAeFw0xODAyMjIxNDA2MjdaFw0yODAyMjAx
+NDA2MjdaMBMxETAPBgNVBAMMCHdsc2VydmVyMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEApO58+bpmLhOQjXxC0JAT/3A7zJcCaS7I4nyR8rslPiDgUSO1
+d6Rk45pAQY0LPXO8veufDmf0ZgMjkbXEcwvXejzitlBkBqcPl9mpYIqQNEOxUGWS
+72kKIBtg+8GB4UoOnfpMQTllsIbkZ3SQWU5AtBeeCYhUH7p0AgVno+WQ7H7X+hmj
+/bOM7/jMRn1iOt7Qw76RbNGeUlFGYLxSMfs7NXLjUmEqoCb5Ve/vFc/QCAiqBsul
+k3GWifoEbvZbE7tcK5HftN3MmhrEVTHLRRsyYMvc9lRoSvQ5or7wBHFm9WnrKvqi
+MwE3libRMs63BoBmzxdCZJt6JcJCi4vLXUh6kwIDAQABo4GrMIGoMAkGA1UdEwQC
+MAAwHQYDVR0OBBYEFC0z7stVjU3RCJtS4XwIiHBqrJcWMEUGA1UdIwQ+MDyAFCvM
+64/2EfuQlBpCudS0ClCG8B2ZoRmkFzAVMRMwEQYDVQQDDApDYW5kZWxhIENBggkA
+s6yDQ/tweJgwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMBMGA1Ud
+EQQMMAqCCHdsc2VydmVyMA0GCSqGSIb3DQEBCwUAA4IBAQCq0UvXSOtGng8hYYmW
+p0WTfWFYbzIdeW9LgGgO+v81BP58EzGBKWZ37hRmYEGUuV/6fBLfiMctx9srV+6+
+5C1vMuEbltNfvoQj0fhak8OQwxjrYEOf/cq+Wk4hDNk3Nns4uhZhHLbQoYVssJA8
+HnulrJA+k6LnPbRSRYU8TtjOoaRJPw7tqrE2I8owIRxx0DGHFfVJBCdKzZxQn7F3
+BOOHsTTqIBLhQ2WiGWCnZbgPtw9uAihSiHQp+dSkvbvt6Ae1Pp9iTcI1Sm753tOm
+iP2i3hF+bbkonjXrgb6zC42Md96T4ccQHAgQTCUyZ954lM8yMdBcjX4rXPrkCGmW
+Ihzi
+-----END CERTIFICATE-----

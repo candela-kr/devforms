@@ -1,0 +1,8 @@
+#!/bin/sh
+
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh wlserver"
+
+su - ubuntu -c "/home/ubuntu/bin/update-public-dns.sh wls"
+su - ubuntu -c "/home/ubuntu/bin/update-local-dns.sh wls"
+
+exit 0

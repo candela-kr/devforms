@@ -1,0 +1,17 @@
+#
+#candela.kr 
+#local / public domain zones
+
+export DOMAIN_NAME="candela.kr"
+export ZONE_ID_PRIVATE="ZDT26G483I8NC"
+export ZONE_ID_PUBLIC="Z1RLVX6K5VVW0F"
+
+# pulic/private dns
+export RTS_SERVER="rts-qa"
+export WLS_SERVER="wls-qa"
+
+# private dns
+#export RTS_STATE="rtstate"
+
+export TXQ="https://sqs.ap-northeast-2.amazonaws.com/912431869902/txout-qa"
+

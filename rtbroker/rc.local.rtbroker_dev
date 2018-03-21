@@ -1,0 +1,8 @@
+#!/bin/sh
+
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh rtbroker"
+
+#su - ubuntu -c "/home/ubuntu/bin/update-public-dns.sh rtbroker"
+su - ubuntu -c "/home/ubuntu/bin/update-local-dns.sh rtbroker"
+
+exit 0

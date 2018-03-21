@@ -1,0 +1,24 @@
+#!/bin/sh
+
+DOMAIN_NAME="candela.kr"
+ENV_FILE="/home/ubuntu/.candela/config"
+
+cat >> $ENV_FILE << EOF
+#
+#candela.kr 
+#local / public domain zones
+
+export DOMAIN_NAME=$DOMAIN_NAME
+export ZONE_ID_PRIVATE="ZDT26G483I8NC"
+export ZONE_ID_PUBLIC="Z1RLVX6K5VVW0F"
+EOF
+
+cat > /etc/rc.local << EOF
+#!/bin/sh
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh rtstate"
+su - ubuntu -c "/home/ubuntu/bin/update-local-dns.sh rtstate"
+exit 0
+EOF
+chmod +x /etc/rc.local
+
+

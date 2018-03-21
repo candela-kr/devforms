@@ -1,0 +1,82 @@
+{
+    "variables": {
+        "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
+        "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
+        "region":         "ap-northeast-2"
+    },
+    "builders": [
+        {
+            "access_key": "{{user `aws_access_key`}}",
+            "ami_name": "rtstate-{{timestamp}}",
+            "instance_type": "t2.small",
+            "region": "ap-northeast-2",
+            "secret_key": "{{user `aws_secret_key`}}",
+            "source_ami" : "ami-67973709",
+            "ssh_username": "ubuntu",
+            "type": "amazon-ebs",
+		"profile" : "candelachain",
+		"ssh_keypair_name": "rtserverkey",
+		"ssh_private_key_file" : "rtserverkey.pem"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "file",
+            "source": "./.candela",
+            "destination": "/home/ubuntu"
+        },
+        {
+            "type": "file",
+            "source": "./bin",
+            "destination": "/home/ubuntu"
+        },
+	{
+            "type": "file",
+            "source": "./credentials/",
+            "destination": "/home/ubuntu"
+        },
+        {
+            "type": "file",
+            "source": "./packages/node-v8.9.4-linux-x64.tar.xz",
+            "destination": "/tmp/"
+        },
+        {
+            "type": "file",
+            "source": "./packages/parallel.tar.bz2",
+            "destination": "/tmp/"
+        },
+        {
+            "type": "file",
+            "source": "~/Projects/rts_tester",
+            "destination": "/home/ubuntu/"
+        },
+        {
+            "type": "shell",
+            "inline":[
+                "echo Before instlaling :",
+                "ls -la  /tmp /home/ubuntu"
+            ]
+        },
+        {
+            "type": "shell",
+            "scripts": [
+		"./tools/install_common.sh",
+		"./tools/install_python.sh",
+		"./tools/install_awslogs_agent.sh",
+		"./tools/install_ssm_agent.sh",
+		"./tools/install_nodejs.sh",
+		"./install_parallel.sh",
+		"./install_rts_tester.sh"
+	    ]
+        },
+        {
+            "type": "shell",
+            "inline":[
+                "echo After instlaling /tmp has :",
+                "ls -l /tmp",
+                "echo After instlaling /home/ubuntu has :",
+                "ls -l /home/ubuntu"
+            ]
+        }
+    ]
+}

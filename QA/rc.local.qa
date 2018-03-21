@@ -1,0 +1,12 @@
+#!/bin/sh
+
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh rtserver"
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh qxserver"
+su - ubuntu -c "/home/ubuntu/bin/start_server.sh wlserver"
+
+su - ubuntu -c "/home/ubuntu/bin/update-public-dns.sh rts-qa"
+
+su - ubuntu -c "/home/ubuntu/bin/update-public-dns.sh wls-qa"
+su - ubuntu -c "/home/ubuntu/bin/update-local-dns.sh wls-qa"
+
+exit 0
